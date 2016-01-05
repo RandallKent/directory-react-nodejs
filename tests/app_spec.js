@@ -45,7 +45,7 @@ describe("Employee Directory [000]", function(){
         .and("match", /King/)
     })
 
-    it.("Has employee office number that is hyperlinked [00a]", function(){
+    it("Has employee office number that is hyperlinked [00a]", function(){
       var phoneNumber = '781-000-0001'
       cy.get("ul.table-view li:nth-child(2)")
         .should("contain", phoneNumber)
